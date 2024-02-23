@@ -30,10 +30,3 @@
 <ul type="circle">
   <li>Users will see a lot of information about the superhero information provided by the API (name, First Appearence, Description, comics, events, series, stories, etc).</li>
 </ul>
-
-// This code defines a function called renderHeroList that loops through an array called listOfHeros. 
-// It clears the inner HTML of an element listOfHeroInDom at the beginning by setting it to an empty string. Then, 
-// it iterates over each item in listOfHeros using a for loop and calls a function displayData passing each hero object (listOfHeros[i]) as an argument. 
-// This function is responsible for rendering the hero data on the screen or performing any display-related operations for each hero in the list.
-
-

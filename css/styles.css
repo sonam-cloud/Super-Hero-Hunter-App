@@ -1,0 +1,290 @@
+/* Stylesheet */
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #fff;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #ff0000;
+}
+
+body {
+	background-color: #505050;
+	background: url('../images/superhero-bg_img.jpg'), linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)) !important;
+	background-blend-mode: overlay;
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+	background-attachment: fixed !important;
+}
+
+/* Header Section */
+header {
+	text-align: right;
+	margin: 1rem;
+}
+
+.favHeroBtn {
+	background-color: #000;
+	font-family: 'Lobster', cursive;
+	font-size: 1.5rem;
+	color: #fff;
+	padding: 10px 20px;
+	display: inline-block;
+	border-radius: 12px;
+	border: 1px solid #fff;
+	text-decoration: none;
+	box-shadow: 0 0 10px rgb(211, 211, 211);
+}
+
+.favHeroBtn:hover {
+	color: #ff0000;
+	border: 1px solid #ff0000;
+}
+
+section {
+	margin: 2rem 1rem;
+	text-align: center;
+}
+
+.sub-heading {
+	font-family: 'Lobster', cursive;
+	font-size: 2rem;
+	color: #fff;
+}
+
+.heading {
+	font-family: 'Lobster', cursive;
+	font-size: 5rem;
+	color: #fff;
+	letter-spacing: 1px;
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: #ff0000;
+}
+
+
+form.search-bar {
+	margin: 2rem auto;
+	width: 50%;
+	display: inline-block;
+}
+
+.search-bar input {
+	font-family: 'Lobster', sans-serif;
+	width: 100%;
+	padding: 20px;
+	font-family: 'Lobster', cursive;
+	font-size: 1.5rem;
+	color: #fff;
+	background-color: #000;
+	border: 2px solid #757575;
+	box-shadow: 0 0 12px rgb(239, 236, 236);
+	border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-ms-border-radius: 15px;
+	-o-border-radius: 15px;
+}
+/*On hover show cross button*/
+input[type="search"]::-webkit-search-decoration:hover,
+input[type="search"]::-webkit-search-cancel-button:hover{ 
+   cursor:pointer; 
+}
+input[type="search"]::-webkit-search-cancel-button { 
+   cursor:pointer; 
+   filter: invert(20%) sepia(100%) saturate(7437%) hue-rotate(2deg) brightness(117%) contrast(118%);
+}
+#search-bar input::placeholder {
+	color: #757575;
+	font-family: 'Lobster', cursive;
+}
+
+.loading-and-error-font {
+	font-family: 'Lobster', cursive;
+	color: #fff;
+	font-size: 2.5rem;
+	letter-spacing: 2px;
+}
+#error_font{
+	font-family: 'Lobster', cursive;
+	color: #fff;
+	font-size: 2.5rem;
+	letter-spacing: 2px;
+}
+#errorMessage {
+	font-family: 'Lobster', sans-serif;
+	font-size: 1rem;
+	color: #ffffff;
+	padding: 15px;
+	position: fixed;
+	bottom: 35%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 12px;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	-ms-border-radius: 12px;
+	-o-border-radius: 12px;
+}
+
+/* Super Hero List Section */
+
+ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+li {
+	border: 2px solid #fff;
+	border-radius: 12px;
+	list-style: none;
+	padding: 20px;
+	background-color: #000;
+	display: inline-block;
+	overflow: hidden;
+	flex-shrink: 3;
+	margin: 30px 15px;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+	flex-direction: column;
+}
+
+li:hover {
+	box-shadow: 0 0 50px rgb(211 211 211);
+	cursor: pointer;
+}
+
+li img {
+	width: 200px;
+	height: 200px;
+	margin: 0;
+	padding: 0;
+	border-radius: 100%;
+}
+
+li #heroTitle {
+	font-family: 'Lobster', sans-serif;
+	font-size: 1rem;
+	color: #ffffff;
+	margin: 1rem 0;
+	text-align: center;
+}
+li #details {
+	margin-right: 5px;
+}
+li .favBtn,
+li #details,
+li #delete {
+	font-family: 'Lobster', sans-serif;
+	font-size: 1rem;
+	border: 1px solid #fff;
+	color: #fff;
+	text-decoration: none;
+	padding: 5px 10px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	background-color: #ff0000;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+li .favBtn:hover,
+li #details:hover,
+li #delete:hover {
+	border: 1px solid #ff0000;
+	color: #ff0000;
+	background-color: transparent;
+}
+.fav_hero_added {
+	background-color: #fff !important;
+	color:#ff0000 !important;
+	border: 1px solid #ff0000 !important;
+}
+/* favHero Page Css */
+.favPageHead {
+	text-align: left;
+}
+
+.backToHome {
+	background-color: #000;
+	font-family: 'Lobster', cursive;
+	font-size: 1.5rem;
+	color: #fff;
+	padding: 10px 20px;
+	display: inline-block;
+	border-radius: 12px;
+	border: 1px solid #fff;
+	text-decoration: none;
+	box-shadow: 0 0 10px lightgrey;
+}
+
+.backToHome:hover {
+	border: 1px solid #ff0000;
+	color: #ff0000;
+}
+
+/* Hero Biography Page css */
+.details-section {
+	text-align: left;
+	color: #fff;
+	background-color: #000;
+	opacity: 0.8;
+	padding: 20px;
+	margin-top: 2rem !important;
+	border: 2px dotted #ff0000;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-ms-border-radius: 20px;
+	-o-border-radius: 20px;
+}
+
+.details-section img {
+	width: 350px;
+	height: 350px;
+	border-radius: 100%;
+	margin: 2rem;
+}
+
+#name h3 {
+	font-family: 'Lobster', cursive;
+	font-size: 2rem;
+	color: #ff0000;
+}
+
+.details-section p {
+	font-family: 'Lobster', cursive;
+	font-size: 1.1rem;
+	color: #fff;
+	margin-bottom: 0.5rem;
+}
+
+.details-section p span {
+	font-size: 1.25rem;
+}

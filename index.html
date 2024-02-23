@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SuperHero Hunter App</title>
+  <!-- Favivon -->
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <!-- External CSS File -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="font/lobster.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+  <main>
+    <!-- Header Button Section-->
+    <header>
+      <a href="./favSuperHeroes.html" target="_self" id="favourite" class="favHeroBtn">My Favourites <i
+          class="far fa-heart"></i></a>
+    </header>
+    <!-- Heading Section And Display Hero Result -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p class="sub-heading">Welcome to the Superheroes Universe!!</p>
+            <h2 class="heading">SuperHeroes Hunter App</h2>
+            <form class="search-bar">
+              <input type="search" name="search" placeholder="Search Your Superhero here..." class="search"
+                id="inputBar">
+            </form>
+            <h3 id="errorMessage"></h3>
+            <h3 id="error_font"></h3>
+            <div id="displayHeroSearchResults">
+              <ul id="heroList"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- External Js -->
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
